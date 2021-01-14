@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+:root {
+	--white: #ffffff;
+	--box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	--box-shadow-light: 0px 0px 4px rgba(0, 0, 0, 0.15);
+	--black: #000000;
+	--light-black: rgba(0, 0, 0, 0.2);
+	--primary-button-bg: #f9fafb;
+	--button-text-color: #212b36;
+	--circular-loader-color: #000000;
+	--primary-button-border-color: rgba(0, 0, 0, 0.15);
+	--destructive-button-bg: #b02b13;
+	--destructive-button-border-color: #e73d1f;
+	--skeleton-loader-bg: rgba(0, 0, 0, 0.15);
+	--skeleton-loader-bg-animating: rgba(255, 255, 255, 0.4);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark {
+	--white: rgba(0, 0, 0, 0.9);
+	--box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+	--box-shadow-light: 0px 0px 4px rgba(255, 255, 255, 0.1);
+	--black: #ffffff;
+	--light-black: rgba(255, 255, 255, 0.2);
+	--primary-button-bg: #f9fafb;
+	--button-text-color: #212b36;
+	--circular-loader-color: #ffffff;
+	--primary-button-border-color: rgba(255, 255, 255, 0.15);
+	--destructive-button-bg: #b02b13;
+	--destructive-button-border-color: #e73d1f;
+	--skeleton-loader-bg: rgba(255, 255, 255, 0.15);
+	--skeleton-loader-bg-animating: rgba(0, 0, 0, 0.4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--white);
+	transition: background-color 100ms ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media all and (hover: hover) {
+	button {
+		cursor: pointer;
+	}
 }
