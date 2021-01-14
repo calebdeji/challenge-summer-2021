@@ -129,6 +129,7 @@ export const useAppContext = (): AppContextProps => {
 
 	const clearNominatedMovies = () => {
 		dispatch({ type: 'clear_nominated_movie' });
+		toast.success('Cleared all nominated movies');
 	};
 
 	return {
