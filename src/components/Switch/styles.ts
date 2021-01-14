@@ -8,13 +8,13 @@ const slideRight = keyframes`
     transform : translateX(0)
   }
   to {
-    transform : translateX(15px);
+    transform : translateX(40px);
   }
 `;
 
 const slideLeft = keyframes`
   from {
-    transform : translateX(15px);
+    transform : translateX(40px);
   }
   to{
     transform : translateX(0)
@@ -22,7 +22,7 @@ const slideLeft = keyframes`
 `;
 
 const Container = styled.button`
-	width: ${convertPixelToRem(40)};
+	width: ${convertPixelToRem(60)};
 	height: ${convertPixelToRem(20)};
 	border-radius: ${convertPixelToRem(7)};
 	position: relative;
