@@ -34,7 +34,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: var(--white);
-	transition: background-color 100ms ease-in-out;
+	transition: background-color 300ms ease-in-out;
 }
 
 p,
